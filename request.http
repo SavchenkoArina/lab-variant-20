@@ -1,0 +1,33 @@
+### 1. Создать пользователя
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "Савченко Арина",
+  "email": "arina@mail.com"
+}
+
+### 2. Получить список пользователей
+GET http://localhost:8080/api/users
+
+### 3. Создать помещение
+POST http://localhost:8080/api/premises
+Content-Type: application/json
+
+{
+  "address": "ул. Ленина, д. 10, кв. 5",
+  "area": 54.2
+}
+
+### 4. Создать начисление
+POST http://localhost:8080/api/utility-charges
+Content-Type: application/json
+
+{
+  "period": "2026-10",
+  "volume": 12.5,
+  "status": "Не оплачено"
+}
+
+### 5. Удалить пользователя
+DELETE http://localhost:8080/api/users/1
